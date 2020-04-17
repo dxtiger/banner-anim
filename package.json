@@ -1,5 +1,5 @@
 {
-  "name": "rc-banner-anim",
+  "name": "rc-banner-anim-autoplay-fixed",
   "version": "2.4.3",
   "description": "banner-anim animation component for react",
   "keywords": [
@@ -8,14 +8,14 @@
     "react-banner-anim",
     "banner-anim"
   ],
-  "homepage": "https://github.com/react-component/banner-anim",
+  "homepage": "https://github.com/dxtiger/banner-anim",
   "author": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-component/banner-anim.git"
+    "url": "https://github.com/dxtiger/banner-anim.git"
   },
   "bugs": {
-    "url": "https://github.com/react-component/banner-anim/issues"
+    "url": "https://github.com/dxtiger/banner-anim/issues"
   },
   "files": [
     "lib",
@@ -25,8 +25,7 @@
     "typings"
   ],
   "licenses": "MIT",
-  "main": "./lib/index",
-  "module": "./es/index",
+  "main": "./src/index",
   "config": {
     "port": 8012,
     "entry": {
@@ -39,17 +38,9 @@
   "scripts": {
     "dist": "rc-tools run dist",
     "build": "rc-tools run build",
-    "gh-pages": "rc-tools run gh-pages",
     "start": "rc-tools run server",
     "compile": "rc-tools run compile --babel-runtime",
     "pub": "rc-tools run pub --babel-runtime",
-    "lint": "rc-tools run lint --fix",
-    "karma": "rc-test run karma",
-    "saucelabs": "rc-test run saucelabs",
-    "test": "rc-test run test",
-    "prettier": "rc-tools run prettier",
-    "chrome-test": "rc-test run chrome-test",
-    "coverage": "rc-test run coverage",
     "validate": "npm ls"
   },
   "devDependencies": {
