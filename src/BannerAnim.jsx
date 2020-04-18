@@ -292,6 +292,8 @@ class BannerAnim extends Component {
   }
 
   autoPlay = () => {
+    // autoplay bug fix
+    ticker.clear(this.autoPlayId);
     this.autoPlayId = ticker.interval(this.next, this.props.autoPlaySpeed);
   }
 
