@@ -300,7 +300,7 @@ class BannerAnim extends Component {
   };
 
   autoPlay = () => {
-    // 执行新ticker.interval之前，删除旧的
+    // autoplay bug fix
     ticker.clear(this.autoPlayId);
     this.autoPlayId = ticker.interval(this.next, this.props.autoPlaySpeed);
   };
